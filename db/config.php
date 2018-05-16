@@ -6,7 +6,6 @@ $dbName = "eff_db";
 // $conn = new PDO("odbc:Driver={Microsoft Access Driver (*.mdb, *.accdb)};Dbq=".$dir.";Uid=;Pwd=;");
 $conn = new PDO('mysql:host=localhost;dbname='.$dbName, 'root', '');
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-date_default_timezone_set('Asia/Manila');
 // ini_set("max_execution_time", 300);
 // ini_set("memory_limit","1024M"); //MB
 // ini_set("max_input_vars",1000000000);

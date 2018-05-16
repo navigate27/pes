@@ -15,8 +15,6 @@
 		"group_id" => $group_id
 	);
 
-	print_r($req);
-
 	$dt = $db->getDates($start,$end);
 	$actual_eff_1 = array();
 	$actual_eff_2 = array();
