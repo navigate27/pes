@@ -1,0 +1,219 @@
+html, *{
+  font-size: 14px;
+}
+
+#banner{
+  margin-top: 25px;
+}
+
+.user-login-image{
+  margin-left: 27%;
+}
+
+.modal-dialog.modal-lg{
+  min-width: 300px; 
+}
+
+.modal-dialog.modal-xs{
+  min-width: 100px; 
+}
+
+.bootstrap-select .btn-default, 
+.bootstrap-select button.btn, 
+.bootstrap-select.open button.btn, 
+.bootstrap-select.open button.btn:hover, 
+.bootstrap-select.open button.btn:focus, 
+.bootstrap-select.open button.btn:active,
+.bootstrap-select .btn-default:active,
+.bootstrap-select .btn-default:active:hover, 
+.bootstrap-select .btn-default.active:hover, 
+.bootstrap-select .open>.dropdown-toggle.btn-default:hover, 
+.bootstrap-select .btn-default:active:focus,.bootstrap-select .btn-default.active:focus, 
+.bootstrap-select .open>.dropdown-toggle.btn-default:focus, 
+.bootstrap-select .btn-default:active.focus,.bootstrap-select .btn-default.active.focus, 
+.bootstrap-select .open>.dropdown-toggle.btn-default.focus{
+  background-color: #fff;
+  border: solid 1px #ddd;
+  color: #000; 
+}
+
+.col-calendar{
+  /*width:400px;*/
+}
+
+.badge-danger{
+ background-color: #f0005e;
+}
+
+
+.th-fw-1
+{
+    width: 24px;
+}
+
+.th-fw-2
+{
+    width: 32px;
+}
+
+.th-fw-3
+{
+    width: 42px;
+}
+
+.th-fw-4
+{
+    width: 62px;
+}
+
+.th-fw-5
+{
+    width: 100px;
+}
+
+.th-fw-6
+{
+    width: 140px;
+}
+
+.th-fw-7
+{
+    width: 190px;
+}
+
+.th-fw-8
+{
+    width: 210px;
+}
+
+.th-fw-9
+{
+    width: 225px;
+}
+
+.th-fw-10
+{
+    width: 255px;
+}
+
+.td-fw-1
+{
+    width: 10px;
+}
+
+.no-pad-right
+{
+    padding-right: 0px;
+}
+
+.no-pad-left
+{
+    padding-left: 0px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+label{
+  font-weight: 600;
+}
+
+.bg-success{
+  border-color: #23a127;
+}
+
+.th-2{
+  padding: 5px 0 5px 0 !important;
+}
+
+.w-4{
+  width: 4% !important;
+}
+
+.w-8{
+  width: 8% !important;
+}
+
+.w-10{
+  width: 10% !important;
+}
+
+.w-12{
+  width: 12% !important;
+}
+
+.w-14{
+  width: 14% !important;
+}
+
+.w-16{
+  width: 16% !important;
+}
+
+.table-report{
+  width: 100%;
+  float:center;
+}
+
+.table-report tr td:first-child{
+  text-align: left;
+}
+
+.table-report td,.table-report th{
+  font-size: 11px !important;
+}
+
+.table-report thead th{
+  border: solid 1px #ddd;
+  font-weight: 400;
+}
+
+.table-report td,.table-report tbody th{
+  border: solid 1px #ddd;
+  text-align: right;
+  padding: 0 5px 0 5px;
+}
+
+@media print{
+    .body-print{
+      
+    }
+    .table-report{
+      width: 100%;
+    }
+    .table-report td,.table-report th{
+      font-size: 12px !important;
+    }
+}
+
+.col-group:hover{
+  cursor: pointer;
+  background-color: #ddd !important;
+}
+
+.group-filter label.active{
+  border-color: #158CBA !important;
+  color: #fff !important;
+  background-color: #158CBA !important;
+}
+
+.navbar.bg-dark{
+  background-color: #555 !important;
+  border-color: #484848 !important;
+}
+
+.navbar.bg-danger{
+  border-color: #ff291d !important;
+}
+
+.dataTables_scrollHeadInner{
+  width:100% !important;
+}
+.dataTables_scrollHeadInner table{
+  width:100% !important;
+}
