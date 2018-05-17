@@ -29,6 +29,7 @@
       $grp = $db->getAllGroup();
 
       // print_r(ini_get_all());
+
     ?>
 <div class="container" id="banner">
 
@@ -52,8 +53,29 @@
                     <input type="hidden" value="1" name="process_id">
                     <div class="col">
                       <label>Car Model</label>
-                      <input type="text" class="form-control" name="car_model_name" value="<?php echo $_SESSION['login_data']['car_model_name']; ?>" readonly>
-                      <input type="hidden" name="car_model_id" value="<?php echo $_SESSION['login_data']['car_model_id']; ?>">
+
+                      <?php
+                        if($_SESSION['login_data']['type'] == 5){
+                      ?>
+                        <select name="car_model_id" class="form-control">
+                          <?php
+                            if($cms){
+                              foreach ($cms as $i => $cm) {
+                                echo '<option value="'.$cm['ID'].'">'.$cm['car_model_name'].'</option>';
+                              }
+                            }
+                          ?>
+                        </select>
+                      <?php
+                        }else{
+                      ?>
+                        <input type="text" class="form-control" name="car_model_name" value="<?php echo $_SESSION['login_data']['car_model_name']; ?>" readonly>
+                        <input type="hidden" name="car_model_id" value="<?php echo $_SESSION['login_data']['car_model_id']; ?>">
+                      <?php
+                        }
+                      ?>
+
+
                     </div>
                     <div class="col">
                       <label>Cutting Date</label>
@@ -290,6 +312,10 @@
     });
 
     $('select[name="group_id"]').change(function(){
+      $('#search-form button[type="submit"]').click();
+    });
+
+    $('select[name="car_model_id"]').change(function(){
       $('#search-form button[type="submit"]').click();
     });
 
