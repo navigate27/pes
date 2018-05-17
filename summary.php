@@ -201,7 +201,7 @@
           plugins: {
             datalabels: {
               anchor: 'end',
-              align: '-45',
+              align: 'top',
               offset: 5,
               backgroundColor: function(context) {
                 console.log(context);
@@ -218,7 +218,8 @@
               borderRadius: 4,
               color: 'white',
               font: {
-                weight: 'bold'
+                weight: 'bold',
+                size: '9'
               },
             }
           },

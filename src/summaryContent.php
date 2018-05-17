@@ -288,7 +288,7 @@
 
 							if($isFound){
 								$mp_wt = ($data['actual_total']*$data['wt_total'])+$data['ext_total'];
-								echo '<td>'.($data['actual_total']*$data['wt_total']).'</td>';
+								echo '<td>'.$mp_wt.'</td>';
 							}else{
 								echo '<td></td>';
 							}
