@@ -44,6 +44,12 @@ function init($request,$db){
 			deleteSchedID($db,$id);
 		break;
 		//END
+
+		//PROCESS DETAIL
+		case 'processDetail':
+			$process_id = $_POST['process_id'];
+			getAllProcessDetailOnProcessID($db,$process_id);
+			break;
 		
 		default:
 			requestInvalid();
@@ -77,6 +83,34 @@ function deleteRolesSchedID($db,$id){
 	$res = $db->deleteRolesSchedID($id);
 	showResult($res);
 }
+
+
+function getAllProcessDetailOnProcessID($db,$process_id){
+	$result = array();
+	$error = true;
+
+
+	$res = $db->getAllProcessDetailOnProcessID($process_id);
+	if($res){
+		foreach ($res as $r) {
+			$result[] = array(
+				'id' => $r['ID'],
+				'process_detail_name' => $r['process_detail_name'],
+				'process_id' => $r['process_id'],
+				'not_count' => $r['not_count'],
+				'process_name' => $r['process_name'],
+			);
+		}
+		$error = false;
+	}
+
+	$result = array(
+		"error" => $error,
+		"result" => $result
+	);
+	showResult($result);
+}
+
 
 function requestInvalid(){
 	return "Sorry. The request is invalid";

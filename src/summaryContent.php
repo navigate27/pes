@@ -63,6 +63,8 @@
 
 		$report_title .= " Efficiency";
 
+	}else{
+		
 	}
 
 ?>

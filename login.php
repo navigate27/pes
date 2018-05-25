@@ -8,6 +8,8 @@
         include 'src/link.php';
     ?>
     <title>First Process Efficiency System</title>
+    <style>
+    </style>
 </head>
 <body>
     <br><br><br><br><br>
